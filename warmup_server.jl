@@ -13,11 +13,11 @@ nb = Pluto.SessionActions.new(sesh; run_async=false)
 @info("shutting down notebook from setup.py")
 Pluto.SessionActions.shutdown(sesh, nb; async=false)
 
-@info("$(versioninfo())")
+# @info("$(versioninfo())")
 
-@info("instantiating notebook environment");
-Pkg.activate("./notebook_environment/")
-Pkg.instantiate()
+# @info("instantiating notebook environment");
+# Pkg.activate("./notebook_environment/")
+# Pkg.instantiate()
 
 @info("setup.py done");
 
